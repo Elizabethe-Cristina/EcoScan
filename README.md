@@ -1,4 +1,5 @@
 🌿 EcoScan - Descarte Inteligente
+
 O EcoScan é uma aplicação web progressiva que utiliza Inteligência Artificial para auxiliar cidadãos no descarte correto de resíduos. Através da câmera do celular ou busca textual, o sistema identifica o material e indica a lixeira de reciclagem correspondente (padrão brasileiro de cores) ou orientações de logística reversa.
 
 🚀 Funcionalidades
