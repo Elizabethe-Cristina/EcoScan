@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoScan - Descarte Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Scripts da IA (TensorFlow e MobileNet) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Eco<span>Scan</span></h1>
+            <p>Sustentabilidade na palma da mão</p>
+        </header>
+
+        <main>
+            <div id="status" class="status-box">Iniciando sistema...</div>
+
+            <div class="camera-container">
+                <video id="webcam" autoplay playsinline></video>
+            </div>
+
+            <div class="controls">
+                <button id="btn-scan" disabled>Analisar pela Câmera</button>
+                
+                <div class="search-container">
+                    <input type="text" id="input-busca" placeholder="Ou digite o nome do item...">
+                    <button id="btn-busca">Buscar por Nome</button>
+                </div>
+            </div>
+
+            <div id="result-container" class="hidden">
+                <div class="result-card">
+                    <div id="eco-badge" class="badge">Material</div>
+                    <h2 id="obj-name">Produto</h2>
+                    <p id="descarte-instrucao"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
